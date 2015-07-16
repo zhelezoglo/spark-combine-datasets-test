@@ -1,6 +1,6 @@
 import org.scalatest.{BeforeAndAfterAll, FlatSpec, Matchers}
 
-class PageAnalyzerTest extends FlatSpec with Matchers with BeforeAndAfterAll with CountryAnalyzer with CountryAnalyzerConfig {
+class CountryAnalyzerTest extends FlatSpec with Matchers with BeforeAndAfterAll with CountryAnalyzer with CountryAnalyzerConfig {
 
   override val envName: String = "local"
 
