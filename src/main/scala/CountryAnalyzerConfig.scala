@@ -5,7 +5,7 @@ import org.apache.spark.{SparkConf, SparkContext}
 trait CountryAnalyzerConfig {
   self: CountryAnalyzer =>
 
-  val envName: String
+  def envName: String
 
   lazy val appName = "combine-datasets"
   lazy val confPathPrefix = s"$envName.$appName.countries-analyzer"
